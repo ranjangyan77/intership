@@ -1,65 +1,89 @@
-📊 Telecom Customer Churn Prediction
+
+# 📊 Telecom Customer Churn Prediction
+
 This project aims to predict customer churn in a telecom company using a neural network model. The model is trained on a cleaned and preprocessed dataset and evaluated using classification metrics.
 
-🚀 Features
-Data cleaning and preprocessing
+---
 
-One-hot encoding of categorical features
+## 🚀 Features
 
-Neural network built using Keras (Sequential API)
+- Data cleaning and preprocessing
+- One-hot encoding of categorical features
+- Neural network built using Keras (Sequential API)
+- Evaluation using confusion matrix and classification report
+- Accuracy plots for training and validation
 
-Evaluation using confusion matrix and classification report
+---
 
-Accuracy plots for training and validation
+## 🧠 Technologies Used
 
-🧠 Technologies Used
-Python
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Scikit-learn
+- Keras (TensorFlow backend)
 
-Pandas
+---
 
-NumPy
+## 📁 Dataset
 
-Matplotlib
+The dataset is sourced from [YBI Foundation GitHub](https://github.com/YBIFoundation/Dataset) and loaded via:
 
-Scikit-learn
-
-Keras (TensorFlow backend)
-
-📁 Dataset
-The dataset is sourced from YBI Foundation GitHub and loaded via:
-
-python
-Copy
-Edit
+```python
 url = 'https://raw.githubusercontent.com/YBIFoundation/Dataset/refs/heads/main/TelecomCustomerChurn.csv'
-⚙️ How It Works
-Load the dataset and preprocess it:
+```
 
-Drop customerID
+---
 
-Handle missing values
+## ⚙️ How It Works
 
-Convert categorical variables to dummy variables
+1. Load the dataset and preprocess it:
+   - Drop `customerID`
+   - Handle missing values
+   - Convert categorical variables to dummy variables
 
-Split the dataset into train and test sets.
+2. Split the dataset into train and test sets.
 
-Normalize the data using StandardScaler.
+3. Normalize the data using `StandardScaler`.
 
-Define a neural network with:
+4. Define a neural network with:
+   - Input layer matching feature size
+   - Two hidden layers (32 and 16 neurons)
+   - Output layer with sigmoid activation for binary classification
 
-Input layer matching feature size
+5. Train the model and evaluate on test data.
 
-Two hidden layers (32 and 16 neurons)
+6. Visualize training and validation accuracy over epochs.
 
-Output layer with sigmoid activation for binary classification
+---
 
-Train the model and evaluate on test data.
+## 📈 Model Performance
 
-Visualize training and validation accuracy over epochs.
+- Accuracy printed after model evaluation
+- Confusion matrix and classification report displayed
+- Accuracy plot shown using matplotlib
 
-📈 Model Performance
-Accuracy printed after model evaluation
+---
 
-Confusion matrix and classification report displayed
+## 🔧 Installation
 
-Accuracy plot shown using matplotlib
+To run this project locally:
+
+```bash
+pip install pandas numpy matplotlib scikit-learn keras
+```
+
+---
+
+## ▶️ Run the Script
+
+```bash
+python intership.py
+```
+
+---
+
+## 📬 Contact
+
+For questions or feedback, feel free to open an issue or reach out.
